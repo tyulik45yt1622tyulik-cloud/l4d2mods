@@ -1,0 +1,18 @@
+VertexLitGeneric
+{
+$basetexture "models/infected/ratman/ratman_guts"
+$bumpmap "models/infected/ratman/ratman_guts_normal"
+$alphatest 1
+$allowdiffusemodulation 0
+$lightwarptexture "models\survivors\coach\coach_head_wrp"
+$phongexponenttexture "models\infected\ratman\ratman_exponent"
+$nocull 1
+$diffuseexp 1 
+$phong 1
+$phongfresnelranges "[.1 .5 1]"
+$phongtint "[1 1 1]"
+$phongboost 1
+$phongexponent 50
+$halflambert 0
+$ambientocclusion 1
+}
