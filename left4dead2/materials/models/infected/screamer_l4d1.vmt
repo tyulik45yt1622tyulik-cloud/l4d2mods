@@ -1,0 +1,57 @@
+vertexlitgeneric
+
+{
+$baseTexture "models\infected\screamer_l4d1/screamer_l4d1"
+$bumpmap "models\infected\screamer_l4d1/screamer_bumpmap"
+$lightwarptexture "models\survivors\coach\coach_head_wrp"
+$allowdiffusemodulation 0
+$halflambert 0
+$diffuseexp 1
+$phong 1
+$phongfresnelranges "[.1 .5 1]"
+$phongtint "[1 1 1]"
+$phongboost 2
+$phongexponent 0
+$ambientocclusion 1
+$detail "effects/burned.vtf"
+$seamless_detail 1
+$seamless_scale ".005"
+$detailscale 4
+$detailblendfactor .001
+$detailblendmode 2
+$bbqamount 1
+$BurnLevel 0.0
+$multi 8.0
+$blendMin 0.0
+$blendMax 1.0
+Proxies
+{
+BBQLevel
+{
+resultVar $bbqamount
+}
+BurnLevel
+{
+resultVar $burnlevel
+}
+Multiply
+{
+srcVar1 $BurnLevel
+srcVar2 $multi
+resultVar $BurnLevel
+}
+Clamp
+{
+min $blendMin
+max $blendMax
+srcVar1 $BurnLevel
+resultVar $BurnLevel
+}
+Equals
+{
+srcVar1 $BurnLevel
+resultVar $detailblendfactor
+}
+}
+}
+
