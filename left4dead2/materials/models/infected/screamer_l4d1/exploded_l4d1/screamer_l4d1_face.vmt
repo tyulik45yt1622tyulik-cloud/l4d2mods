@@ -1,0 +1,33 @@
+vertexlitgeneric
+
+{
+$baseTexture "models\infected\screamer_l4d1\screamer_l4d1_face"
+$bumpmap "models\infected\screamer_l4d1\screamer_l4d1_face_normal"
+
+
+$emissiveBlendEnabled 		"1"
+	
+		$emissiveBlendFlowTexture		"vgui/white"
+		$emissiveBlendTexture		"vgui/white"
+		$emissiveBlendBaseTexture		"models\infected\screamer_l4d1/l4d1_glow"
+	
+		$emissiveBlendTint 			"[1 1 1]"
+		$emissiveBlendStrength 		"0.35"
+		$emissiveBlendScrollVector 		"[0.0 0.0]" 
+
+
+
+
+
+$phong 1
+$phongfresnelranges "[.01 .25 3]"
+$phongtint "[.8 .8 1]"
+$phongboost 14
+$phongexponent 16
+
+$detail "models\infected\screamer_l4d1/exploded_l4d1/screamer_blood_detail.vtf"
+$detailscale 3
+$detailblendfactor 1
+$detailblendmode 0
+$detailAmount 1
+}

@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+$baseTexture "models\infected\screamer_l4d1/screamer_smoker_l4d1"
+$bumpmap "models\infected\smoker/screamer_smoker_l4d1_normal"
+$allowdiffusemodulation 1
+$phong 1
+$BASEMAPLUMINANCEPHONGMASK 1
+$phongfresnelranges "[.01 .3 4]"
+$phongtint "[.8 .8 1]"
+$phongboost 14
+$phongexponent 16
+$detail "models\infected\screamer_l4d1/exploded_l4d1/screamer_blood_detail.vtf"
+$detailscale 3
+$detailblendfactor 1
+$detailblendmode 0
+$detailAmount 1
+}

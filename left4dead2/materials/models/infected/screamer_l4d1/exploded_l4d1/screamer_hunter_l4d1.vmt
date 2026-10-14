@@ -1,0 +1,18 @@
+vertexlitgeneric
+{
+$baseTexture "models\infected\screamer_l4d1/screamer_hunter_l4d1"
+$shinyblood 1
+$shinybloodexponent 8
+$halflambert 1
+$bumpmap "effects/flat_normal"
+$phong 1
+$phongboost 15
+$phongexponent 1
+$phongfresnelranges "[1 0 .25]"
+$allowdiffusemodulation 1
+$detail "models\infected\screamer_l4d1/exploded_l4d1/screamer_blood_detail.vtf"
+$detailscale 3
+$detailblendfactor 1
+$detailblendmode 0
+$detailAmount 1
+}
