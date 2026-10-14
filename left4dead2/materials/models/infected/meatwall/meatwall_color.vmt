@@ -1,0 +1,57 @@
+"VertexLitGeneric"
+{
+"$basetexture" "models/infected/meatwall/meatwall_color"
+$bumpmap "models/infected/meatwall/meatwall_normal"
+$alphatest 1
+$allowdiffusemodulation 0
+$lightwarptexture "models\survivors\coach\coach_head_wrp"
+$phongexponenttexture "models\infected\meatwall\meatwall_exponent"
+$nocull 1
+$diffuseexp 1 
+$phong 1
+$phongfresnelranges "[.1 .5 1]"
+$phongtint "[1 1 1]"
+$phongboost 1
+$phongexponent 50
+$halflambert 0
+$ambientocclusion 1
+$detail "models/infected/common/l4d2/ci_burning"
+
+$bbqamount 1
+
+$BurnLevel 0
+Proxies
+{
+BBQLevel
+{
+resultVar $bbqamount
+}
+BurnLevel
+{
+resultVar $burnlevel
+}
+Multiply
+{
+srcVar1 $phongfresnelrange_0
+srcVar2 $bbqamount
+resultVar "$phongfresnelranges[0]"
+}
+Multiply
+{
+srcVar1 $phongfresnelrange_1
+srcVar2 $bbqamount
+resultVar "$phongfresnelranges[1]"
+}
+Multiply
+{
+srcVar1 $phongfresnelrange_2
+srcVar2 $bbqamount
+resultVar "$phongfresnelranges[2]"
+}
+Equals
+{
+srcVar1 $BurnLevel
+resultVar $detailblendfactor
+}
+}
+}
